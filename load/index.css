@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(255,34,100);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span{
+    user-select: none;
+    position: relative;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-family: sans-serif;
+    color: rgb(255,255,255);
+    display: inline-block;
+    animation: spin 2s infinite linear;
+    transform-origin: 0 100%;
+    text-shadow: 0px 20px 50px rgb(32,32,32);
+}
+@keyframes spin {
+    35%{
+        transform: rotate(360deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+span:nth-child(odd){
+    color: rgb(255,166,0);
+}
